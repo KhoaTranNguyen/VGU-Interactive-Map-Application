@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta  http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href ="/static/content/login.css">
+</head>
+
+<body>
+
+    <section>
+    <div class="login-box">
+        <form action="{{ url_for('checkLogin') }}" method = "post">
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </span>
+                <input type="text" id="username" name="username" pattern="\w{6,16}" title="Username must be between 6 - 16 characters." required>
+                <label>User name:</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </span>
+                <input type="password" id="password" name="password" pattern="\w{6,16}" title="Password must be between 6 - 16 characters." required>
+                <label>Password:</label>
+            </div>
+            <div class="remember-forgot">
+                <lable><input type="checkbox">Remember me</lable>
+                <a href="{{ url_for('forgetPassword') }}">Forgot Password?</a>
+            </div> 
+            <button type="submit">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="{{ url_for('register') }}">Register</a></p>
+            </div>
+        </form>
+    </div> 
+</section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+

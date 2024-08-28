@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    font-family: "Press Start 2P", cursive;
+    text-shadow: 5px 5px 2px #c4c4c4;
+    margin: 20px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 3rem;
+    position: relative; /* Add relative positioning to the title */
+}
+
+#map{
+    height: 89vh;
+}
+
+.notification {
+    font-family: "Press Start 2P", cursive;
+    /*background-color: #f5ff69;*/
+    text-shadow: 5px 5px 2px #c4c4c4;
+    margin: 20px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 3rem;
+    position: relative; /* Add relative positioning to the title */
+}
+
+.custom-map-control-button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 13px;
+  line-height: 38px;
+  margin: 20px;
+  padding: 0 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.custom-logout-button {
+  background-color: #f0f;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 13px;
+  line-height: 38px;
+  margin: 20px;
+  padding: 0 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  bottom: 100px;
+}
+
+.custom-logout-button:hover {
+  background-color: #ff0; /* Change the background color on hover */
+  border-color: #ff0;     /* Change the border color on hover */
+}
+
+.custom-map-control-button img,
+.custom-logout-button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.custom-image-style {
+  position: absolute;
+  z-index: 1;
+  /* ... */
+}

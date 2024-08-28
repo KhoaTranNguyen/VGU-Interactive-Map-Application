@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Google Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="static/content/map_4.css">
+    <script src="/static/scripts/map_4.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBaL05niF_LK74R9JUktQUg2Wmbu0bHn8&map_ids=29842dec5d9edae3&callback=initMap">
+    </script>
+</head>
+<body>
+    <h1> Let's go to VGU!!!</h1>
+    <div id="map"></div>
+    <li><a href="{{ url_for('logout') }}">Log out</a></li>
+</body>
+</html>

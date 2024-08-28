@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>70c15ac8-8aaf-43ef-8156-a7c4ecd9397e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>MULTI</Name>
+    <RootNamespace>MULTI</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="runserver.py" />
+    <Compile Include="MULTI\__init__.py" />
+    <Compile Include="MULTI\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MULTI\" />
+    <Folder Include="MULTI\static\icon\" />
+    <Folder Include="MULTI\static\image\" />
+    <Folder Include="MULTI\static\" />
+    <Folder Include="MULTI\static\content\" />
+    <Folder Include="MULTI\static\fonts\" />
+    <Folder Include="MULTI\static\scripts\" />
+    <Folder Include="MULTI\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MULTI\static\content\forgetpassword.css" />
+    <Content Include="MULTI\static\content\map_4.css" />
+    <Content Include="MULTI\static\content\register.css" />
+    <Content Include="MULTI\static\data.txt" />
+    <Content Include="MULTI\static\icon\castle.svg" />
+    <Content Include="MULTI\static\icon\ghosthouse.svg" />
+    <Content Include="MULTI\static\icon\hill_with_eyes.svg" />
+    <Content Include="MULTI\static\icon\pipe.svg" />
+    <Content Include="MULTI\static\icon\pointer.svg" />
+    <Content Include="MULTI\static\icon\star.svg" />
+    <Content Include="MULTI\static\icon\yoshi_house.svg" />
+    <Content Include="MULTI\static\image\bg.jpg" />
+    <Content Include="MULTI\static\image\bg2.png" />
+    <Content Include="MULTI\static\image\bg3.png" />
+    <Content Include="MULTI\static\image\bg4.png" />
+    <Content Include="MULTI\static\image\wall1.jpg" />
+    <Content Include="MULTI\static\content\main.css" />
+    <Content Include="MULTI\static\content\login.css" />
+    <Content Include="MULTI\static\scripts\map_3.js" />
+    <Content Include="MULTI\static\scripts\map_4.js" />
+    <Content Include="MULTI\templates\forgetPasswordFail.html" />
+    <Content Include="MULTI\templates\forgetPassword.html" />
+    <Content Include="MULTI\templates\login.html" />
+    <Content Include="MULTI\templates\registerFail.html" />
+    <Content Include="MULTI\templates\registerSuccess.html" />
+    <Content Include="MULTI\templates\register.html" />
+    <Content Include="MULTI\templates\resetPassword.html" />
+    <Content Include="MULTI\templates\resetPasswordFail.html" />
+    <Content Include="MULTI\templates\vgumap.html" />
+    <Content Include="MULTI\static\scripts\map.js" />
+    <Content Include="MULTI\static\scripts\map_2.js" />
+    <Content Include="requirements.txt" />
+    <Content Include="MULTI\static\content\bootstrap.css" />
+    <Content Include="MULTI\static\content\bootstrap.min.css" />
+    <Content Include="MULTI\static\content\site.css" />
+    <Content Include="MULTI\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="MULTI\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="MULTI\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="MULTI\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="MULTI\static\scripts\bootstrap.js" />
+    <Content Include="MULTI\static\scripts\bootstrap.min.js" />
+    <Content Include="MULTI\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="MULTI\static\scripts\jquery-1.10.2.js" />
+    <Content Include="MULTI\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="MULTI\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="MULTI\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="MULTI\static\scripts\jquery.validate.js" />
+    <Content Include="MULTI\static\scripts\jquery.validate.min.js" />
+    <Content Include="MULTI\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="MULTI\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="MULTI\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="MULTI\static\scripts\respond.js" />
+    <Content Include="MULTI\static\scripts\respond.min.js" />
+    <Content Include="MULTI\static\scripts\_references.js" />
+    <Content Include="MULTI\templates\about.html" />
+    <Content Include="MULTI\templates\contact.html" />
+    <Content Include="MULTI\templates\index.html" />
+    <Content Include="MULTI\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.8</Version>
+      <Description>env (Python 3.8 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
